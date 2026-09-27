@@ -1,5 +1,5 @@
 {
-  "passed": 27,
+  "passed": 28,
   "checks": [
     "source aspect ratio preserved",
     "replica uses no video element",
@@ -23,6 +23,7 @@
     "second recording replays volume detail",
     "first recording replays notifications",
     "comparison playback remains synchronized",
+    "comparison clock waits for its media source",
     "research view visible",
     "mobile has no horizontal page overflow",
     "mobile comparison keeps both screens visible",
@@ -31,9 +32,15 @@
   ],
   "errors": [],
   "performance": {
-    "frames": 203,
+    "frames": 215,
     "median_ms": 16.700000000000728,
     "p95_ms": 33.400000000001455,
-    "note": "Headless Chromium on this Intel Mac; not a guarantee for other devices."
+    "platform": "darwin",
+    "architecture": "x64",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "note": "Headless Chromium in this test environment; not a guarantee for other devices."
   }
 }

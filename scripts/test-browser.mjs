@@ -55,8 +55,24 @@ try{
   const before=(await snap()).playTime;await page.click('#next-frame');check('next frame advances to true PTS',(await snap()).playTime>before&&(await snap()).playTime-before<.017);
   await page.selectOption('#clip','2');await page.waitForTimeout(200);await page.evaluate(()=>window.motionLab.seek(8.18));check('second recording replays volume detail',(await snap()).scene==='volume');
   await page.selectOption('#clip','1');await page.waitForTimeout(200);await page.evaluate(()=>window.motionLab.seek(4.75));check('first recording replays notifications',(await snap()).scene==='notifications');
-  await page.selectOption('#clip','3');await page.waitForTimeout(300);await page.click('#play');await page.waitForTimeout(1100);
-  const playback=await snap();const videoTime=await page.locator('#reference').evaluate(v=>v.currentTime);check('comparison playback remains synchronized',playback.playing&&Math.abs(playback.playTime-videoTime)<.08);await page.click('#play');
+  await page.selectOption('#clip','3');await page.click('#play');
+  await page.waitForFunction(()=>{const v=document.querySelector('#reference');return v.readyState>=3&&!v.paused&&v.currentTime>.2;},{},{timeout:10000});
+  await page.waitForTimeout(1100);
+  // Sample both clocks in one rendered frame: separate protocol round trips
+  // introduce unrelated latency on a busy CI renderer.
+  const timing=await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>{
+    const state=window.motionLab.snapshot(),video=document.querySelector('#reference');
+    resolve({playing:state.playing,model:state.playTime,video:video.currentTime,readyState:video.readyState,paused:video.paused});
+  })));
+  assert.ok(timing.playing&&timing.video>.2&&Math.abs(timing.model-timing.video)<.08,JSON.stringify(timing));
+  check('comparison playback remains synchronized',true);
+  const stalled=await page.evaluate(async()=>{
+    const video=document.querySelector('#reference');video.pause();const t=video.currentTime;
+    await new Promise(resolve=>setTimeout(resolve,220));
+    const model=window.motionLab.snapshot().playTime;await video.play();return {model,video:t};
+  });
+  check('comparison clock waits for its media source',Math.abs(stalled.model-stalled.video)<.03);
+  await page.click('#play');
   await page.click('[data-mode="research"]');check('research view visible',await page.locator('#research').isVisible());await page.screenshot({path:path.join(out,'research.png'),fullPage:true});
   await page.click('[data-mode="interact"]');await scene('home');
   await page.evaluate(()=>window.motionLab.startMetrics());await page.click('#demo');await page.waitForTimeout(4500);await page.click('#demo');

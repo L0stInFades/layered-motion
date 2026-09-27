@@ -348,7 +348,9 @@ function tick(now){
   let dt=lastTime?Math.max(0,(now-lastTime)/1000):0;lastTime=now;
   if(recordMetric&&dt>0)frameSamples.push(dt*1000);
   if(playing){
-    const next=mode==='compare'&&!reference.paused?reference.currentTime:playTime+dt*speed;
+    // The media clock is authoritative throughout comparison, including while
+    // play() is pending or the video is paused. Do not let the replica run ahead.
+    const next=mode==='compare'?reference.currentTime:playTime+dt*speed;
     // Reconstruct from source time on compare seeks/drift; otherwise integrate at
     // exact event boundaries so a late browser frame cannot delay an event.
     if(next<playTime||next-playTime>.15){seek(next,false);}else{
