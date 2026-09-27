@@ -1,0 +1,9 @@
+# Archived evidence is checked byte-for-byte. Preserve line endings even when
+# a contributor clones with core.autocrlf enabled (for example on Windows).
+analysis/** -text
+web/reference/** -text
+web/assets/** -text
+
+*.jpg binary
+*.png binary
+*.mp4 binary
