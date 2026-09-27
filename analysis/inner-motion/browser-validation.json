@@ -1,0 +1,27 @@
+{
+  "checks": [
+    "five assistant rows match independently tracked source positions within 8px RMS",
+    "assistant exit matches visible source landmarks within 16px RMS",
+    "search, parcel, shortcuts, photos, apps arrive in source order",
+    "paused frame retains every foreground position and velocity",
+    "individual control shortcuts match source centers within 6px RMS",
+    "on exit the discs shrink more than their center spacing",
+    "control reversal preserves every layer position and velocity",
+    "assistant reversal preserves every layer position and velocity",
+    "reversing before delayed entry cannot reveal a stale card",
+    "real pointer entry preserves row order while held",
+    "reduced motion snaps all five layers and clears pending delays",
+    "no foreground browser errors"
+  ],
+  "errors": [],
+  "assistantRMSE": 3.6616402360505638,
+  "assistantSamples": 33,
+  "exitRMSE": 7.7910411873854235,
+  "exitSamples": 21,
+  "controlRMSE": 2.5898256558570507,
+  "controlSamples": 48,
+  "exit": {
+    "pitch": 0.9165834733459595,
+    "disc": 0.7783814994441773
+  }
+}

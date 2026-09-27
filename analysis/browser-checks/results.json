@@ -1,0 +1,39 @@
+{
+  "passed": 27,
+  "checks": [
+    "source aspect ratio preserved",
+    "replica uses no video element",
+    "top-right drag opens control center",
+    "WLAN morph expands",
+    "Escape collapses detail to control",
+    "music controls respond",
+    "long press opens volume expansion",
+    "slider supports keyboard",
+    "focused controls never scroll the tablet canvas",
+    "top-left drag opens notifications",
+    "clear notification returns home",
+    "left edge drag opens assistant",
+    "notes icon opens native DOM application",
+    "bottom gesture dismisses app",
+    "window settles into launch icon",
+    "recent card expands into selected app",
+    "interrupted transition retains position and velocity",
+    "source seek and replica share time",
+    "next frame advances to true PTS",
+    "second recording replays volume detail",
+    "first recording replays notifications",
+    "comparison playback remains synchronized",
+    "research view visible",
+    "mobile has no horizontal page overflow",
+    "mobile comparison keeps both screens visible",
+    "reduced motion snaps immediately",
+    "no browser errors or missing assets"
+  ],
+  "errors": [],
+  "performance": {
+    "frames": 203,
+    "median_ms": 16.700000000000728,
+    "p95_ms": 33.400000000001455,
+    "note": "Headless Chromium on this Intel Mac; not a guarantee for other devices."
+  }
+}

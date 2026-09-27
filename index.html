@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f3f2ec"><meta name="description" content="从 147 张连续原帧提炼的动效设计规范：语义分组、分层收稳、独立几何与连续打断。">
+  <title>层序 · Layered Motion — 优雅，发生在先后之间</title>
+  <link rel="icon" href="site/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="site/spec.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="masthead"><a href="./" class="wordmark"><img src="site/mark.svg" width="29" height="29" alt=""><b>层序</b><span>LAYERED MOTION</span></a><nav aria-label="主导航"><a href="docs/specification.md">规范</a><a href="web/">实验室 ↗</a><a href="https://github.com/L0stInFades/layered-motion">GitHub ↗</a></nav></header>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> MOTION DESIGN STUDY / 001</p><h1>优雅，发生在<br><em>先后之间。</em></h1><p class="lead">一个动作，五种收尾。<br>从下拉浮窗与负一屏的细微时序，<br>整理一套有证据、可复用的动效规范。</p><div class="actions"><a class="button" href="docs/specification.md">阅读设计规范 <span>↗</span></a><a class="text-link" href="web/">亲手试试动画 →</a></div><p class="version">OPEN RESEARCH <span>·</span> v0.1.0 <span>·</span> 2026.09</p></div>
+      <div class="study" aria-label="负一屏五层位移关系图解">
+        <div class="study-head"><span>01 / THE ORDER OF ARRIVAL</span><span class="study-status">实测节点</span></div>
+        <div class="motion-field" id="motion-field">
+          <div class="finish-line"><span>终点</span></div>
+          <div class="motion-row" data-layer="0"><div class="layer-label"><b>01</b> 搜索栏</div><div class="lane"><div class="motion-card search"><span>⌕</span><i></i><span>＋</span></div></div><output>−44 px</output></div>
+          <div class="motion-row" data-layer="1"><div class="layer-label"><b>02</b> 快递卡</div><div class="lane"><div class="motion-card parcel"><span class="parcel-icon">◇</span><div><i></i><i></i></div><span>↗</span></div></div><output>−69.5 px</output></div>
+          <div class="motion-row" data-layer="2"><div class="layer-label"><b>03</b> 快捷图标</div><div class="lane"><div class="motion-card shortcuts"><span>▧</span><span>⌘</span><span>⌗</span><span>▤</span></div></div><output>−106 px</output></div>
+          <div class="motion-row" data-layer="3"><div class="layer-label"><b>04</b> 照片卡</div><div class="lane"><div class="motion-card photos"><i></i><i></i><i></i></div></div><output>−163.5 px</output></div>
+          <div class="motion-row" data-layer="4"><div class="layer-label"><b>05</b> 底部应用</div><div class="lane"><div class="motion-card apps"><span>♪</span><span>◈</span><span>◉</span><span>▣</span><span>✦</span></div></div><output>−270.5 px</output></div>
+        </div>
+        <div class="study-controls"><button id="node-play" type="button" aria-pressed="false">播放节点</button><label for="node-time" class="sr-only">选择原片时间节点</label><input id="node-time" type="range" min="0" max="4" step="1" value="0"><output id="source-time">3.935 s</output></div>
+        <div class="study-caption"><p>拖动看先后。图形按比例示意，数字为距终点的实测 X 差。</p><a id="source-frame" href="analysis/inner-motion/native-0091.jpg" target="_blank" rel="noreferrer">查看这一帧 ↗</a></div>
+        <noscript><p>启用 JavaScript 可切换节点。完整测量见<a href="analysis/图标时序复查.md">时序复查</a>。</p></noscript>
+      </div>
+    </section>
+    <div class="archive-band"><p>每一条原则，<br><b>回到画面里求证。</b></p><div><strong>3</strong><span>完整源录屏</span></div><div><strong>2,409</strong><span>实际 PTS 帧记录</span></div><div><strong>147</strong><span>重点过程连续帧</span></div><a href="docs/archive.md">浏览研究档案 ↗</a></div>
+    <section class="principles"><div class="section-intro"><p class="eyebrow">THE MOTION GRAMMAR</p><h2>整体有秩序，<br>局部有余韵。</h2><a class="text-link" href="docs/elegance.md">为什么会显得优雅 →</a></div><div class="principle-list">
+      <article><span>01</span><div><h3>同组稳定，异层有序。</h3><p>图标与文字跟随各自的卡片；搜索、快捷项、照片和应用依次收稳。细节丰富，内容始终可读。</p><small>LM-01 — LM-03 / GROUPING & SEQUENCE</small></div></article>
+      <article><span>02</span><div><h3>形体收拢，留白舒展。</h3><p>退出到同一帧，按钮尺度约为 79%，中心间距仍约为 92%。位置与尺寸各自变化，保留轻盈的空间感。</p><small>LM-04 — LM-06 / GEOMETRY & DEPTH</small></div></article>
+      <article><span>03</span><div><h3>随时改向，顺势接续。</h3><p>进入与退出有各自的节奏。手指改变主意时，运动从当前位置与速度继续，旧的等待随之取消。</p><small>LM-07 — LM-12 / LIFECYCLE & ACCESS</small></div></article>
+    </div></section>
+    <section class="reading"><div class="reading-head"><p class="eyebrow">READ / BUILD / VERIFY</p><h2>从观察，到可以落地的规则。</h2></div><div class="reading-grid">
+      <a href="docs/specification.md"><span>01 / DESIGN</span><h3>设计规范 <b>↗</b></h3><p>12 条规则、语义分层、双向时序、可访问性与采用方式。</p></a>
+      <a href="docs/implementation.md"><span>02 / ENGINEERING</span><h3>实现与参数 <b>↗</b></h3><p>独立通道、连续弹簧、机器可读预设与复用边界。</p></a>
+      <a href="docs/acceptance.md"><span>03 / VALIDATION</span><h3>验收与证据 <b>↗</b></h3><p>把原帧轨迹与实际 DOM 对齐，检查反向、拖动和减少动态效果。</p></a>
+      <a href="docs/reproduction.md"><span>04 / REPRODUCTION</span><h3>复现与归档 <b>↗</b></h3><p>原片 SHA-256、147 张连续帧、测量脚本与本地运行。</p></a>
+    </div></section>
+    <section class="lab-callout"><div><p class="eyebrow">THE INTERACTIVE REFERENCE</p><h2>拖动它，打断它，<br>看看细节如何接上。</h2><p>原片对照、慢放、逐帧检查与实时交互，都在同一个实验室里。</p></div><a class="button" href="web/">进入动效实验室 ↗</a></section>
+  </main>
+  <footer class="site-footer"><div><b>层序 · Layered Motion</b><p>从可见行为出发的独立研究。参考参数不代表原系统内部实现。</p></div><div><a href="docs/overview.en.md">English overview</a><a href="MEDIA_NOTICE.md">媒体与许可</a><a href="https://github.com/L0stInFades/layered-motion/releases/tag/v0.1.0">v0.1.0 原片档案 ↗</a></div></footer>
+  <script type="module" src="site/study.js"></script>
+</body>
+</html>

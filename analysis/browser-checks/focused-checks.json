@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "control-enter: original frame navigation and image decode passed",
+    "control-exit: original frame navigation and image decode passed",
+    "assistant-enter: original frame navigation and image decode passed",
+    "assistant-exit: original frame navigation and image decode passed",
+    "fullscreen preserves tablet bounds",
+    "assistant reverse swipe dismisses continuously",
+    "short control drag followed by hold returns home without stale fling"
+  ],
+  "errors": []
+}

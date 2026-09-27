@@ -1,0 +1,34 @@
+import assert from 'node:assert/strict';
+import {writeFile} from 'node:fs/promises';
+import {launchBrowser,siteURL} from './browser-runtime.mjs';
+const browser=await launchBrowser();
+const page=await browser.newPage({viewport:{width:1440,height:1080}}),errors=[];
+page.on('pageerror',e=>errors.push(e.message));
+page.on('response',r=>{if(r.status()>=400)errors.push(`${r.status()} ${r.url()}`);});
+const checks=[];
+const check=(name,value)=>{assert.ok(value,name);checks.push(name);console.log('PASS',name);};
+try{
+  await page.goto(siteURL,{waitUntil:'networkidle'});
+  await page.waitForFunction(()=>document.querySelector('.motion-card').style.transform.length>0);
+  check('landing evidence loads under project subpath',await page.locator('.motion-row').count()===5);
+  const first=await page.locator('.motion-row output').allTextContents();
+  check('diagram displays original measured distances',first[0]==='−44 px'&&first[4]==='−270.5 px');
+  await page.locator('#node-time').fill('4');
+  check('scrubbing updates every layer',await page.locator('.motion-row output').last().textContent()==='−12 px');
+  const native=await page.locator('#source-frame').getAttribute('href');
+  check('selected source frame is downloadable',(await page.request.get(new URL(native,siteURL).href)).ok());
+  await page.screenshot({path:'analysis/browser-checks/specification-desktop.png',fullPage:true});
+  await page.emulateMedia({reducedMotion:'reduce'});await page.click('#node-play');
+  const value=await page.locator('#node-time').inputValue();await page.waitForTimeout(750);
+  check('reduced motion advances one node without autoplay',value===await page.locator('#node-time').inputValue()&&await page.locator('#node-play').getAttribute('aria-pressed')==='false');
+  await page.setViewportSize({width:390,height:844});
+  check('landing has no mobile overflow',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+  await page.screenshot({path:'analysis/browser-checks/specification-mobile.png',fullPage:true});
+  await page.goto(new URL('docs/specification.html',siteURL).href,{waitUntil:'networkidle'});
+  check('specification is rendered as readable HTML',await page.locator('article h1').count()===1&&await page.locator('article').textContent().then(s=>s.includes('LM-12')));
+  check('documentation has no mobile overflow',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+  const response=await page.request.get(new URL('web/reference/clip-3.mp4',siteURL).href,{headers:{Range:'bytes=0-1023'}});
+  check('video byte ranges work',response.status()===206&&(await response.body()).length===1024);
+  check('site has no missing assets or browser errors',errors.length===0);
+  await writeFile('analysis/browser-checks/site-validation.json',JSON.stringify({checks,errors,basePath:new URL(siteURL).pathname},null,2)+'\n');
+}finally{await browser.close();}

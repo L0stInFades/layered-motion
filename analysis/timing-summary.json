@@ -1,0 +1,44 @@
+[
+  {
+    "file": "Screenrecorder-2026-09-27-12-35-13-797.mp4",
+    "frames": 255,
+    "first_pts": 0.0,
+    "last_pts": 10.446,
+    "median_frame_ms": 41.0,
+    "min_frame_ms": 41.0,
+    "max_frame_ms": 43.0,
+    "measured_mean_fps": 24.316,
+    "measurement_resolution": [
+      591,
+      418
+    ]
+  },
+  {
+    "file": "Screenrecorder-2026-09-27-12-37-27-630.mp4",
+    "frames": 432,
+    "first_pts": 0.0,
+    "last_pts": 17.743,
+    "median_frame_ms": 41.0,
+    "min_frame_ms": 40.0,
+    "max_frame_ms": 43.0,
+    "measured_mean_fps": 24.291,
+    "measurement_resolution": [
+      591,
+      418
+    ]
+  },
+  {
+    "file": "Screenrecorder-2026-09-27-12-47-35-6.mp4",
+    "frames": 1722,
+    "first_pts": 0.0,
+    "last_pts": 19.163,
+    "median_frame_ms": 11.0,
+    "min_frame_ms": 10.0,
+    "max_frame_ms": 16.0,
+    "measured_mean_fps": 89.808,
+    "measurement_resolution": [
+      591,
+      418
+    ]
+  }
+]

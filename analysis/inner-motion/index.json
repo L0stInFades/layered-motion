@@ -1,0 +1,1031 @@
+[
+  {
+    "segment": "control-enter",
+    "source_frame": 80,
+    "pts": 0.9,
+    "image": "frame-0001.jpg",
+    "native": "native-0001.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 81,
+    "pts": 0.911,
+    "image": "frame-0002.jpg",
+    "native": "native-0002.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 82,
+    "pts": 0.923,
+    "image": "frame-0003.jpg",
+    "native": "native-0003.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 83,
+    "pts": 0.934,
+    "image": "frame-0004.jpg",
+    "native": "native-0004.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 84,
+    "pts": 0.945,
+    "image": "frame-0005.jpg",
+    "native": "native-0005.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 85,
+    "pts": 0.956,
+    "image": "frame-0006.jpg",
+    "native": "native-0006.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 86,
+    "pts": 0.967,
+    "image": "frame-0007.jpg",
+    "native": "native-0007.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 87,
+    "pts": 0.978,
+    "image": "frame-0008.jpg",
+    "native": "native-0008.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 88,
+    "pts": 0.989,
+    "image": "frame-0009.jpg",
+    "native": "native-0009.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 89,
+    "pts": 1.0,
+    "image": "frame-0010.jpg",
+    "native": "native-0010.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 90,
+    "pts": 1.011,
+    "image": "frame-0011.jpg",
+    "native": "native-0011.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 91,
+    "pts": 1.022,
+    "image": "frame-0012.jpg",
+    "native": "native-0012.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 92,
+    "pts": 1.033,
+    "image": "frame-0013.jpg",
+    "native": "native-0013.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 93,
+    "pts": 1.045,
+    "image": "frame-0014.jpg",
+    "native": "native-0014.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 94,
+    "pts": 1.056,
+    "image": "frame-0015.jpg",
+    "native": "native-0015.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 95,
+    "pts": 1.068,
+    "image": "frame-0016.jpg",
+    "native": "native-0016.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 96,
+    "pts": 1.079,
+    "image": "frame-0017.jpg",
+    "native": "native-0017.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 97,
+    "pts": 1.09,
+    "image": "frame-0018.jpg",
+    "native": "native-0018.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 98,
+    "pts": 1.101,
+    "image": "frame-0019.jpg",
+    "native": "native-0019.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 99,
+    "pts": 1.112,
+    "image": "frame-0020.jpg",
+    "native": "native-0020.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 100,
+    "pts": 1.123,
+    "image": "frame-0021.jpg",
+    "native": "native-0021.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 101,
+    "pts": 1.135,
+    "image": "frame-0022.jpg",
+    "native": "native-0022.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 102,
+    "pts": 1.145,
+    "image": "frame-0023.jpg",
+    "native": "native-0023.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 103,
+    "pts": 1.156,
+    "image": "frame-0024.jpg",
+    "native": "native-0024.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 104,
+    "pts": 1.167,
+    "image": "frame-0025.jpg",
+    "native": "native-0025.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 105,
+    "pts": 1.178,
+    "image": "frame-0026.jpg",
+    "native": "native-0026.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 106,
+    "pts": 1.189,
+    "image": "frame-0027.jpg",
+    "native": "native-0027.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 107,
+    "pts": 1.2,
+    "image": "frame-0028.jpg",
+    "native": "native-0028.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 108,
+    "pts": 1.211,
+    "image": "frame-0029.jpg",
+    "native": "native-0029.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 109,
+    "pts": 1.222,
+    "image": "frame-0030.jpg",
+    "native": "native-0030.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 110,
+    "pts": 1.233,
+    "image": "frame-0031.jpg",
+    "native": "native-0031.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 111,
+    "pts": 1.244,
+    "image": "frame-0032.jpg",
+    "native": "native-0032.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 112,
+    "pts": 1.256,
+    "image": "frame-0033.jpg",
+    "native": "native-0033.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 113,
+    "pts": 1.268,
+    "image": "frame-0034.jpg",
+    "native": "native-0034.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 114,
+    "pts": 1.278,
+    "image": "frame-0035.jpg",
+    "native": "native-0035.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 115,
+    "pts": 1.289,
+    "image": "frame-0036.jpg",
+    "native": "native-0036.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 116,
+    "pts": 1.301,
+    "image": "frame-0037.jpg",
+    "native": "native-0037.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 117,
+    "pts": 1.312,
+    "image": "frame-0038.jpg",
+    "native": "native-0038.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 118,
+    "pts": 1.324,
+    "image": "frame-0039.jpg",
+    "native": "native-0039.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 119,
+    "pts": 1.335,
+    "image": "frame-0040.jpg",
+    "native": "native-0040.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 120,
+    "pts": 1.346,
+    "image": "frame-0041.jpg",
+    "native": "native-0041.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 121,
+    "pts": 1.357,
+    "image": "frame-0042.jpg",
+    "native": "native-0042.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 122,
+    "pts": 1.368,
+    "image": "frame-0043.jpg",
+    "native": "native-0043.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 123,
+    "pts": 1.379,
+    "image": "frame-0044.jpg",
+    "native": "native-0044.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 124,
+    "pts": 1.39,
+    "image": "frame-0045.jpg",
+    "native": "native-0045.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 125,
+    "pts": 1.401,
+    "image": "frame-0046.jpg",
+    "native": "native-0046.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 126,
+    "pts": 1.412,
+    "image": "frame-0047.jpg",
+    "native": "native-0047.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 127,
+    "pts": 1.423,
+    "image": "frame-0048.jpg",
+    "native": "native-0048.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 128,
+    "pts": 1.435,
+    "image": "frame-0049.jpg",
+    "native": "native-0049.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 129,
+    "pts": 1.446,
+    "image": "frame-0050.jpg",
+    "native": "native-0050.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 130,
+    "pts": 1.457,
+    "image": "frame-0051.jpg",
+    "native": "native-0051.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 131,
+    "pts": 1.468,
+    "image": "frame-0052.jpg",
+    "native": "native-0052.jpg"
+  },
+  {
+    "segment": "control-enter",
+    "source_frame": 132,
+    "pts": 1.479,
+    "image": "frame-0053.jpg",
+    "native": "native-0053.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 134,
+    "pts": 1.501,
+    "image": "frame-0054.jpg",
+    "native": "native-0054.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 135,
+    "pts": 1.512,
+    "image": "frame-0055.jpg",
+    "native": "native-0055.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 136,
+    "pts": 1.523,
+    "image": "frame-0056.jpg",
+    "native": "native-0056.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 137,
+    "pts": 1.534,
+    "image": "frame-0057.jpg",
+    "native": "native-0057.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 138,
+    "pts": 1.545,
+    "image": "frame-0058.jpg",
+    "native": "native-0058.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 139,
+    "pts": 1.556,
+    "image": "frame-0059.jpg",
+    "native": "native-0059.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 140,
+    "pts": 1.567,
+    "image": "frame-0060.jpg",
+    "native": "native-0060.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 141,
+    "pts": 1.578,
+    "image": "frame-0061.jpg",
+    "native": "native-0061.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 142,
+    "pts": 1.589,
+    "image": "frame-0062.jpg",
+    "native": "native-0062.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 143,
+    "pts": 1.6,
+    "image": "frame-0063.jpg",
+    "native": "native-0063.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 144,
+    "pts": 1.611,
+    "image": "frame-0064.jpg",
+    "native": "native-0064.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 145,
+    "pts": 1.622,
+    "image": "frame-0065.jpg",
+    "native": "native-0065.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 146,
+    "pts": 1.633,
+    "image": "frame-0066.jpg",
+    "native": "native-0066.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 147,
+    "pts": 1.644,
+    "image": "frame-0067.jpg",
+    "native": "native-0067.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 148,
+    "pts": 1.655,
+    "image": "frame-0068.jpg",
+    "native": "native-0068.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 149,
+    "pts": 1.666,
+    "image": "frame-0069.jpg",
+    "native": "native-0069.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 150,
+    "pts": 1.677,
+    "image": "frame-0070.jpg",
+    "native": "native-0070.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 151,
+    "pts": 1.688,
+    "image": "frame-0071.jpg",
+    "native": "native-0071.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 152,
+    "pts": 1.699,
+    "image": "frame-0072.jpg",
+    "native": "native-0072.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 153,
+    "pts": 1.71,
+    "image": "frame-0073.jpg",
+    "native": "native-0073.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 154,
+    "pts": 1.721,
+    "image": "frame-0074.jpg",
+    "native": "native-0074.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 155,
+    "pts": 1.733,
+    "image": "frame-0075.jpg",
+    "native": "native-0075.jpg"
+  },
+  {
+    "segment": "control-exit",
+    "source_frame": 156,
+    "pts": 1.744,
+    "image": "frame-0076.jpg",
+    "native": "native-0076.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 339,
+    "pts": 3.779,
+    "image": "frame-0077.jpg",
+    "native": "native-0077.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 340,
+    "pts": 3.79,
+    "image": "frame-0078.jpg",
+    "native": "native-0078.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 341,
+    "pts": 3.801,
+    "image": "frame-0079.jpg",
+    "native": "native-0079.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 342,
+    "pts": 3.812,
+    "image": "frame-0080.jpg",
+    "native": "native-0080.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 343,
+    "pts": 3.823,
+    "image": "frame-0081.jpg",
+    "native": "native-0081.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 344,
+    "pts": 3.834,
+    "image": "frame-0082.jpg",
+    "native": "native-0082.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 345,
+    "pts": 3.845,
+    "image": "frame-0083.jpg",
+    "native": "native-0083.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 346,
+    "pts": 3.856,
+    "image": "frame-0084.jpg",
+    "native": "native-0084.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 347,
+    "pts": 3.867,
+    "image": "frame-0085.jpg",
+    "native": "native-0085.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 348,
+    "pts": 3.878,
+    "image": "frame-0086.jpg",
+    "native": "native-0086.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 349,
+    "pts": 3.889,
+    "image": "frame-0087.jpg",
+    "native": "native-0087.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 350,
+    "pts": 3.901,
+    "image": "frame-0088.jpg",
+    "native": "native-0088.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 351,
+    "pts": 3.912,
+    "image": "frame-0089.jpg",
+    "native": "native-0089.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 352,
+    "pts": 3.923,
+    "image": "frame-0090.jpg",
+    "native": "native-0090.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 353,
+    "pts": 3.935,
+    "image": "frame-0091.jpg",
+    "native": "native-0091.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 354,
+    "pts": 3.946,
+    "image": "frame-0092.jpg",
+    "native": "native-0092.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 355,
+    "pts": 3.957,
+    "image": "frame-0093.jpg",
+    "native": "native-0093.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 356,
+    "pts": 3.969,
+    "image": "frame-0094.jpg",
+    "native": "native-0094.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 357,
+    "pts": 3.98,
+    "image": "frame-0095.jpg",
+    "native": "native-0095.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 358,
+    "pts": 3.991,
+    "image": "frame-0096.jpg",
+    "native": "native-0096.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 359,
+    "pts": 4.002,
+    "image": "frame-0097.jpg",
+    "native": "native-0097.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 360,
+    "pts": 4.013,
+    "image": "frame-0098.jpg",
+    "native": "native-0098.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 361,
+    "pts": 4.024,
+    "image": "frame-0099.jpg",
+    "native": "native-0099.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 362,
+    "pts": 4.035,
+    "image": "frame-0100.jpg",
+    "native": "native-0100.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 363,
+    "pts": 4.046,
+    "image": "frame-0101.jpg",
+    "native": "native-0101.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 364,
+    "pts": 4.057,
+    "image": "frame-0102.jpg",
+    "native": "native-0102.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 365,
+    "pts": 4.068,
+    "image": "frame-0103.jpg",
+    "native": "native-0103.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 366,
+    "pts": 4.079,
+    "image": "frame-0104.jpg",
+    "native": "native-0104.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 367,
+    "pts": 4.09,
+    "image": "frame-0105.jpg",
+    "native": "native-0105.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 368,
+    "pts": 4.101,
+    "image": "frame-0106.jpg",
+    "native": "native-0106.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 369,
+    "pts": 4.112,
+    "image": "frame-0107.jpg",
+    "native": "native-0107.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 370,
+    "pts": 4.123,
+    "image": "frame-0108.jpg",
+    "native": "native-0108.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 371,
+    "pts": 4.135,
+    "image": "frame-0109.jpg",
+    "native": "native-0109.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 372,
+    "pts": 4.146,
+    "image": "frame-0110.jpg",
+    "native": "native-0110.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 373,
+    "pts": 4.157,
+    "image": "frame-0111.jpg",
+    "native": "native-0111.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 374,
+    "pts": 4.168,
+    "image": "frame-0112.jpg",
+    "native": "native-0112.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 375,
+    "pts": 4.179,
+    "image": "frame-0113.jpg",
+    "native": "native-0113.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 376,
+    "pts": 4.19,
+    "image": "frame-0114.jpg",
+    "native": "native-0114.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 377,
+    "pts": 4.201,
+    "image": "frame-0115.jpg",
+    "native": "native-0115.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 378,
+    "pts": 4.212,
+    "image": "frame-0116.jpg",
+    "native": "native-0116.jpg"
+  },
+  {
+    "segment": "assistant-enter",
+    "source_frame": 379,
+    "pts": 4.223,
+    "image": "frame-0117.jpg",
+    "native": "native-0117.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 380,
+    "pts": 4.235,
+    "image": "frame-0118.jpg",
+    "native": "native-0118.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 381,
+    "pts": 4.246,
+    "image": "frame-0119.jpg",
+    "native": "native-0119.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 382,
+    "pts": 4.257,
+    "image": "frame-0120.jpg",
+    "native": "native-0120.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 383,
+    "pts": 4.268,
+    "image": "frame-0121.jpg",
+    "native": "native-0121.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 384,
+    "pts": 4.279,
+    "image": "frame-0122.jpg",
+    "native": "native-0122.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 385,
+    "pts": 4.29,
+    "image": "frame-0123.jpg",
+    "native": "native-0123.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 386,
+    "pts": 4.301,
+    "image": "frame-0124.jpg",
+    "native": "native-0124.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 387,
+    "pts": 4.312,
+    "image": "frame-0125.jpg",
+    "native": "native-0125.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 388,
+    "pts": 4.323,
+    "image": "frame-0126.jpg",
+    "native": "native-0126.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 389,
+    "pts": 4.334,
+    "image": "frame-0127.jpg",
+    "native": "native-0127.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 390,
+    "pts": 4.345,
+    "image": "frame-0128.jpg",
+    "native": "native-0128.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 391,
+    "pts": 4.357,
+    "image": "frame-0129.jpg",
+    "native": "native-0129.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 392,
+    "pts": 4.368,
+    "image": "frame-0130.jpg",
+    "native": "native-0130.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 393,
+    "pts": 4.379,
+    "image": "frame-0131.jpg",
+    "native": "native-0131.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 394,
+    "pts": 4.39,
+    "image": "frame-0132.jpg",
+    "native": "native-0132.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 395,
+    "pts": 4.401,
+    "image": "frame-0133.jpg",
+    "native": "native-0133.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 396,
+    "pts": 4.412,
+    "image": "frame-0134.jpg",
+    "native": "native-0134.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 397,
+    "pts": 4.423,
+    "image": "frame-0135.jpg",
+    "native": "native-0135.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 398,
+    "pts": 4.434,
+    "image": "frame-0136.jpg",
+    "native": "native-0136.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 399,
+    "pts": 4.445,
+    "image": "frame-0137.jpg",
+    "native": "native-0137.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 400,
+    "pts": 4.456,
+    "image": "frame-0138.jpg",
+    "native": "native-0138.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 401,
+    "pts": 4.468,
+    "image": "frame-0139.jpg",
+    "native": "native-0139.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 402,
+    "pts": 4.479,
+    "image": "frame-0140.jpg",
+    "native": "native-0140.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 403,
+    "pts": 4.49,
+    "image": "frame-0141.jpg",
+    "native": "native-0141.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 404,
+    "pts": 4.501,
+    "image": "frame-0142.jpg",
+    "native": "native-0142.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 405,
+    "pts": 4.513,
+    "image": "frame-0143.jpg",
+    "native": "native-0143.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 406,
+    "pts": 4.524,
+    "image": "frame-0144.jpg",
+    "native": "native-0144.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 407,
+    "pts": 4.535,
+    "image": "frame-0145.jpg",
+    "native": "native-0145.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 408,
+    "pts": 4.546,
+    "image": "frame-0146.jpg",
+    "native": "native-0146.jpg"
+  },
+  {
+    "segment": "assistant-exit",
+    "source_frame": 409,
+    "pts": 4.557,
+    "image": "frame-0147.jpg",
+    "native": "native-0147.jpg"
+  }
+]

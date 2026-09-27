@@ -1,0 +1,19 @@
+{
+  "name": "layered-motion",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An evidence-led motion design specification, frame archive and interactive reference lab.",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "npm run build && node web/server.mjs",
+    "build": "node scripts/build-site.mjs",
+    "test": "npm run build && node scripts/test-motion.mjs && node scripts/check-evidence.mjs && node scripts/run-browser-tests.mjs",
+    "test:motion": "node scripts/test-motion.mjs",
+    "test:browser": "node scripts/run-browser-tests.mjs",
+    "archive:verify": "python3 scripts/archive.py verify",
+    "archive:pack": "python3 scripts/archive.py pack"
+  },
+  "devDependencies": { "marked": "18.0.14", "playwright": "1.63.0" }
+}

@@ -1,0 +1,115 @@
+{
+  "$schema": "./schema.json",
+  "version": "0.1.0",
+  "status": "reference-preset",
+  "description": "Empirical fits for this recording; not normative timing values or native OS parameters.",
+  "units": {
+    "time": "seconds",
+    "position": "reference-pixels",
+    "scale": "ratio",
+    "mass": 1,
+    "stiffness": "s^-2",
+    "damping": "s^-1"
+  },
+  "reference": {
+    "width": 1182,
+    "height": 836,
+    "recording": "Screenrecorder-2026-09-27-12-47-35-6.mp4",
+    "sourceManifest": "../analysis/source-manifest.json"
+  },
+  "behavior": {
+    "retarget": "preserve-position-and-velocity",
+    "staleDelay": "cancel",
+    "reducedMotion": "snap-and-clear-delays"
+  },
+  "assistant": {
+    "closedX": -550,
+    "exitX": -1182,
+    "openX": 0,
+    "layers": [
+      {
+        "name": "search",
+        "landmark": "plus",
+        "enter": {
+          "stiffness": 1111.3753758162761,
+          "damping": 72.47948339757335,
+          "delay": 0.028454609931111208
+        },
+        "exit": {
+          "stiffness": 71.96366903133666,
+          "damping": 16.966280562496504,
+          "delay": 0.01071513483538325
+        }
+      },
+      {
+        "name": "parcel",
+        "landmark": "parcel-search",
+        "enter": {
+          "stiffness": 751.7109754930864,
+          "damping": 52.956121012382866,
+          "delay": 0.04282285799597974
+        },
+        "exit": {
+          "stiffness": 82.69134639429147,
+          "damping": 18.186956468226505,
+          "delay": 0.01480078947189766
+        }
+      },
+      {
+        "name": "shortcuts",
+        "landmark": "shortcut-4-glyph",
+        "enter": {
+          "stiffness": 1058.3098419508544,
+          "damping": 70.59721807108247,
+          "delay": 0.06609347568895305
+        },
+        "exit": {
+          "stiffness": 94.68054768465973,
+          "damping": 19.460785974328964,
+          "delay": 0.018256433349736256
+        }
+      },
+      {
+        "name": "photos",
+        "landmark": "photo-3",
+        "enter": {
+          "stiffness": 2476.1900156935635,
+          "damping": 149.99999996725427,
+          "delay": 0.09575111636084363
+        },
+        "exit": {
+          "stiffness": 104.15259168084589,
+          "damping": 20.411035415269446,
+          "delay": 0.020078312415721167
+        }
+      },
+      {
+        "name": "apps",
+        "landmark": "bottom-app-3",
+        "enter": {
+          "stiffness": 578.7370955314644,
+          "damping": 49.73274436110967,
+          "delay": 0.09735183368566326
+        },
+        "exit": {
+          "stiffness": 137.675589496533,
+          "damping": 23.46704834413847,
+          "delay": 0.027075130969641013
+        }
+      }
+    ]
+  },
+  "control": {
+    "entryFits": "../analysis/inner-motion/control-fit.json",
+    "exitObservation": {
+      "sourceTime": 1.556,
+      "glyphScale": 0.79,
+      "centerPitchRatio": 0.92
+    }
+  },
+  "backdrop": {
+    "controlScale": 0.9331,
+    "assistantScale": 0.8491,
+    "provenance": "effective-pixel-fit"
+  }
+}

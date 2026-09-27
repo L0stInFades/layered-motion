@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "control-enter native crop loads",
+    "control-enter consecutive frame advances",
+    "control-exit native crop loads",
+    "control-exit consecutive frame advances",
+    "assistant-enter native crop loads",
+    "assistant-enter consecutive frame advances",
+    "assistant-exit native crop loads",
+    "assistant-exit consecutive frame advances",
+    "full-frame toggle works",
+    "zoom controls fit narrow screens"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "landing evidence loads under project subpath",
+    "diagram displays original measured distances",
+    "scrubbing updates every layer",
+    "selected source frame is downloadable",
+    "reduced motion advances one node without autoplay",
+    "landing has no mobile overflow",
+    "specification is rendered as readable HTML",
+    "documentation has no mobile overflow",
+    "video byte ranges work",
+    "site has no missing assets or browser errors"
+  ],
+  "errors": [],
+  "basePath": "/layered-motion/"
+}

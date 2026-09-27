@@ -1,0 +1,23 @@
+{
+  "note": "Rendered screenshots compared with source stable frames, background ROI only; not whole-screen similarity.",
+  "control": {
+    "source_time": 1.412,
+    "rgb_rmse_0_255": 3.523,
+    "roi_normalized": [
+      0.05,
+      0.084,
+      0.52,
+      0.86
+    ]
+  },
+  "assistant": {
+    "source_time": 4.135,
+    "rgb_rmse_0_255": 7.239,
+    "roi_normalized": [
+      0.457,
+      0.12,
+      0.947,
+      0.9
+    ]
+  }
+}

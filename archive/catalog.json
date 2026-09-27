@@ -1,0 +1,56 @@
+{
+  "version": "0.1.0",
+  "captureDate": "2026-09-27",
+  "release": "https://github.com/L0stInFades/layered-motion/releases/tag/v0.1.0",
+  "bundle": {
+    "filename": "source-recordings-2026-09-27.tar.gz",
+    "bytes": 112745724,
+    "sha256": "7dbae3d93cd4ffa25c38bdedac2c3a5573ffae9c05cef656e205345068fe0f0f",
+    "url": "https://github.com/L0stInFades/layered-motion/releases/download/v0.1.0/source-recordings-2026-09-27.tar.gz"
+  },
+  "originals": [
+    {
+      "path": "originals/Bluetooth/Screenrecorder-2026-09-27-12-35-13-797.mp4",
+      "bytes": 11805171,
+      "sha256": "2a456f7d276fd7c1bd47b12aa4e4fe45c4fec6205252216d686094a1c38e1972",
+      "playable": true
+    },
+    {
+      "path": "originals/Bluetooth/Screenrecorder-2026-09-27-12-37-27-630.mp4",
+      "bytes": 12753050,
+      "sha256": "b9b4b2f92d388c56bff2eccaeef9a4875a90cee87a33b9b90fd1d498550154e2",
+      "playable": true
+    },
+    {
+      "path": "originals/Bluetooth/Screenrecorder-2026-09-27-12-47-35-6.mp4",
+      "bytes": 89762909,
+      "sha256": "a3b4e5af047fefd1c55d90fc47f54e2c308bd1389d82700c1bb636ce1c29487a",
+      "playable": true
+    },
+    {
+      "path": "originals/Screenrecorder-2026-09-27-12-35-13-797 (1).mp4",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "playable": false
+    },
+    {
+      "path": "originals/Screenrecorder-2026-09-27-12-35-13-797.mp4",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "playable": false
+    }
+  ],
+  "evidence": {
+    "totalSourceFrames": 2409,
+    "continuousDetailedFrames": 147,
+    "frameIndex": "../analysis/frame-by-frame/index.json",
+    "nativeIndex": "../analysis/inner-motion/index.json",
+    "sourceManifest": "../analysis/source-manifest.json",
+    "inventory": "evidence-sha256.json"
+  },
+  "audioReview": {
+    "method": "ffmpeg volumedetect",
+    "meanAndPeakDb": -91.0,
+    "scope": "all three valid original audio tracks"
+  }
+}

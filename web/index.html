@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark"><title>Layered Motion — 交互实验室</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg width="0" height="0" aria-hidden="true" style="position:absolute;pointer-events:none"><defs><filter id="source-grade" color-interpolation-filters="sRGB"><feColorMatrix id="grade-matrix" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/></filter></defs></svg>
+  <header class="site-header"><a class="brand" href="../"><span class="brand-mark">m<span>·</span></span> LAYERED MOTION<span class="brand-divider">/</span><span class="muted">LAB</span></a><span class="local-badge"><i></i> REFERENCE LAB</span><a class="source-link" href="../docs/specification.md" target="_blank">设计规范 <span>↗</span></a></header>
+  <main>
+    <section class="intro"><div><div class="eyebrow">从录屏，到可触摸的动效</div><h1>浮窗，<em>要跟手。</em></h1><p>下拉控制中心与负一屏。拖动、反向打断，观察浮层如何跟随手指归位。</p></div><button class="primary" id="demo"><span>▶</span> 播放浮窗演示</button></section>
+    <nav class="mode-tabs" aria-label="工作区"><button class="selected" data-mode="interact">交互复刻</button><button data-mode="compare">原片对照</button><button data-mode="research">动画拆解</button><span class="tab-note">2364 × 1672 <b>·</b> 原片最高约 90 fps</span></nav>
+    <section class="workspace" id="workspace">
+      <div class="stage-column">
+        <div class="stage-top"><span class="stage-title"><i></i> <span id="stage-title">实时网页 · 可直接操作</span></span><div class="stage-actions"><button id="fullscreen" aria-label="全屏操作" title="全屏操作">⤢</button><span class="live-state" id="live-state">READY</span></div></div>
+        <div class="screens" id="screens">
+          <div class="reference-wrap" id="reference-wrap"><div class="screen-label">01 <span>原始录屏</span><b id="source-fps">≈ 90 fps</b></div><video id="reference" preload="metadata" playsinline muted src="reference/clip-3.mp4"></video></div>
+          <div class="replica-wrap"><div class="screen-label replica-label">02 <span>网页复刻</span><b>LIVE DOM</b></div>
+            <div class="device" id="device" tabindex="0" role="group" aria-label="可操作平板复刻。右上向下拖打开控制中心，顶部左侧向下拖打开通知，从左边向右拖打开负一屏，底部向上拖返回桌面。">
+              <div class="world" id="world">
+                <div class="home-plane" id="home-plane"><img src="assets/home.jpg" alt="从第三段录屏提取的桌面静态底图" draggable="false"></div>
+                <div class="home-hotspots" id="home-hotspots">
+                  <button class="hotspot notes" data-app="notes" aria-label="打开笔记"></button><button class="hotspot browser" data-app="browser" aria-label="打开浏览器"></button><button class="hotspot store" data-app="store" aria-label="打开应用商店"></button><button class="hotspot files" data-app="files" aria-label="打开文件管理"></button><button class="hotspot gallery" data-app="gallery" aria-label="打开相册"></button><button class="hotspot dock-notes" data-app="notes" data-origin="dock" aria-label="从程序坞打开笔记"></button>
+                </div>
+                <div class="scrim" id="scrim"></div>
+                <div class="control-layer" id="control-layer">
+                  <div class="control-header control-piece"><span>9月27日 周日</span><div><small>无服务</small><span>◉ ▰ ◒ 64▰</span></div></div>
+                  <button class="wifi-tile glass control-piece" id="wifi-tile" aria-label="展开 WLAN"><span class="icon" data-icon="wifi"></span><span><b>MI-Demo</b><small>已连接</small></span></button>
+                  <button class="data-tile glass control-piece" id="data-tile"><span class="icon" data-icon="data"></span><span><b>移动数据</b><small>不可用</small></span></button>
+                  <button class="music-tile glass control-piece" id="music-tile" aria-label="展开音乐控制"><span class="cast icon" data-icon="cast"></span><span class="music-title">暂无播放</span><span class="music-buttons"><span>◀</span><span class="play-symbol">▶</span><span>▶</span></span></button>
+                  <div class="vertical-slider glass control-piece brightness" role="slider" tabindex="0" aria-label="亮度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="81" data-slider="brightness"><div class="slider-fill"></div><span class="icon" data-icon="sun"></span></div>
+                  <div class="vertical-slider glass control-piece volume" role="slider" tabindex="0" aria-label="音量" aria-valuemin="0" aria-valuemax="100" aria-valuenow="66" data-slider="volume"><div class="slider-fill"></div><span class="icon" data-icon="volume"></span></div>
+                  <div class="devices-tile glass control-piece" id="devices-tile"></div>
+                  <div class="quick-grid control-piece" id="quick-grid"></div>
+                </div>
+                <div class="notification-layer" id="notification-layer"><div class="notification-heading"><strong>12:35</strong><span>9月27日 周日</span></div><div class="notification-card glass"><span class="notice-icon red">▣</span><div><b>屏幕录制</b><small>正在录制屏幕</small></div><time>12:35</time></div><div class="notification-card glass"><span class="notice-icon orange">◉</span><div><b>为你推荐的新鲜内容</b><small>发现更多好看、好玩、好用的应用</small></div><time>现在</time></div><div class="notification-card glass"><span class="notice-icon green">♧</span><div><b>服务与建议</b><small>连接设备，继续你的精彩</small></div><time>现在</time></div><button class="clear-notifications glass" id="clear-notifications" aria-label="清除通知">×</button></div>
+                <div class="assistant-layer" id="assistant-layer"><div class="assistant-search glass">⌕ <span>搜索</span><b>＋</b></div><div class="assistant-card schedule"><small>9月27日 周日</small><h3>今天，留一点时间给自己。</h3><p>没有待办事项</p><div class="schedule-line"></div><span>下一件美好的事，正在发生。</span></div><div class="assistant-tools"><span>▧</span><span>◇</span><span>⌗</span><span>▤</span></div><div class="assistant-card photo-card"><small>广角镜头里的日常</small><div class="landscapes"><i></i><i></i><i></i></div><h3>去发现，城市的另一面。</h3></div><div class="assistant-card suggestions"><b>常用应用</b><span>♪　◉　◈　▣</span></div></div>
+                <div class="app-window" id="app-window"><div class="app-content" id="app-content"></div></div>
+                <div class="icon-proxy" id="icon-proxy"></div>
+                <div class="recents-layer" id="recents-layer"><div class="recents-heading">最近任务 <span>长按卡片管理应用</span></div><div class="recent-grid" id="recent-grid"></div><button class="recent-close glass" id="recent-close" aria-label="关闭多任务">×</button></div>
+                <div class="detail-window glass" id="detail-window"><div class="detail-content" id="detail-content"></div></div>
+                <div class="gesture-edge top-left" data-gesture="notifications" aria-label="下拉通知"></div><div class="gesture-edge top-right" data-gesture="control" aria-label="下拉控制中心"></div><div class="gesture-edge left-edge" data-gesture="assistant" aria-label="右滑负一屏"></div><div class="gesture-edge bottom-edge" data-gesture="home" aria-label="上滑返回桌面"></div>
+                <button class="home-indicator" id="home-indicator" data-gesture="home" aria-label="返回桌面"></button><div class="touch-dot" id="touch-dot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="transport" id="transport"><button id="play" class="transport-play" aria-label="播放或暂停">▶</button><button id="prev-frame" aria-label="上一帧">‹</button><input id="timeline" type="range" min="0" max="19.174" step="0.0111" value="0" aria-label="录屏时间轴"><button id="next-frame" aria-label="下一帧">›</button><output id="timecode">00.00 / 19.17</output><select id="clip" aria-label="选择录屏"><option value="3">12:47 · 应用 / 多任务</option><option value="1">12:35 · 控制中心 / 通知</option><option value="2">12:37 · 卡片 / 负一屏</option></select></div>
+        <div class="stage-bottom"><span class="interaction-hint" id="interaction-hint"><span>↙</span> 右上角下拉打开控制中心 · 点击桌面应用 · 底部上滑返回</span><div class="speed-control" role="group" aria-label="播放速度"><button data-speed="0.25">¼×</button><button data-speed="0.5">½×</button><button data-speed="1" class="selected">1×</button></div></div>
+      </div>
+      <aside class="side-panel">
+        <div class="section-caption">交互场景 <span>01 — 05</span></div>
+        <div class="scene-list"><button data-scene="control"><span class="scene-number">01</span><span><b>控制中心</b><small>按钮独立运动 · 长按展开</small></span><i>↗</i></button><button data-scene="notifications"><span class="scene-number">02</span><span><b>通知中心</b><small>纵向展开 · 连续打断</small></span><i>↗</i></button><button data-scene="assistant"><span class="scene-number">03</span><span><b>负一屏</b><small>分层横移 · 依次收稳</small></span><i>↗</i></button><button data-scene="app"><span class="scene-number">04</span><span><b>应用开合</b><small>图标锚点 · 窗口形变</small></span><i>↗</i></button><button data-scene="recents"><span class="scene-number">05</span><span><b>多任务</b><small>空间重排 · 缩放归位</small></span><i>↗</i></button></div>
+        <button class="home-button" id="home">↶ 返回桌面 <kbd>Esc</kbd></button>
+        <div class="physics-panel"><div class="section-caption">调整手感 <button id="reset-tuning">重置</button></div><label>弹簧刚度 <output id="stiffness-value">260</output><input id="stiffness" type="range" min="120" max="650" value="260"></label><label>阻尼 <output id="damping-value">32</output><input id="damping" type="range" min="15" max="55" value="32"></label><label>背景模糊 <output id="blur-value">27 px</output><input id="blur" type="range" min="0" max="48" value="27"></label><div class="curve-wrap"><svg id="spring-chart" viewBox="0 0 260 68" role="img" aria-label="当前弹簧响应曲线"><path class="curve-grid" d="M0 14H260M0 58H260"/><path id="curve-path"/></svg><span>0 ms</span><span>800 ms</span></div><p class="physics-note">保留当前位置和速度，随时可以反向打断。</p></div>
+        <div class="material-note"><i></i><span>桌面使用原片静态底图。浮层与动画由 HTML / CSS / JavaScript 实时生成。</span></div>
+      </aside>
+    </section>
+    <section id="research" class="research" hidden>
+      <div class="research-lead"><div><span class="eyebrow">拆开这层“顺滑”</span><h2>不同的层，有不同的节奏。</h2><p>从真实时间戳和逐帧画面出发，把观察、测量与实现假设分开。</p></div><a class="outline-link" href="../analysis/研究报告.md" target="_blank">打开完整研究记录 ↗</a></div>
+      <div class="research-grid"><article><span>01 / COMPOSITION</span><h3>背景先退，内容再落位</h3><p>控制中心背景约缩至 93.3%，负一屏约缩至 84.9%。各自叠加不同程度的模糊与色调处理，前景另行运动。</p><div class="layer-diagram"><i>桌面底图</i><i>模糊 · 遮罩</i><i>玻璃卡片</i><i>内容 · 高光</i></div></article><article><span>02 / CONTINUITY</span><h3>进入与退出，节奏不同</h3><p>逐个按钮追踪：进入时各自收稳；退出时圆形按钮的直径比中心间距收缩得更多。每层独立运动，反向时保留速度。</p><div class="equation">ẍ + c ẋ + k(x − xₜ) = 0</div><small>复刻模型 · 无法由录屏证明原系统使用同一方程</small></article><article><span>03 / GEOMETRY</span><h3>负一屏，五层依次到位</h3><p>搜索栏先到，快递卡随后，快捷图标、照片卡、底部应用逐层跟上。同一帧，各层还差的距离不同；同一排图标的相对位置保持。</p><div class="morph-diagram"><b style="opacity:.3;transform:translateX(-15px)"></b><span>→</span><b></b></div></article></div>
+      <div class="evidence-strip"><div><b>3</b><span>有效原片</span></div><div><b>2,409</b><span>逐帧采样</span></div><div><b>10–43 ms</b><span>真实帧间隔</span></div><div><b>SHA-256</b><span>手机 / 电脑一致</span></div></div>
+      <div class="research-bottom"><p><b>实现边界</b>　这是依据可见行为制作的交互原型。原系统的渲染器、弹簧参数与手势事件不可直接从录屏还原；静态桌面、应用内容细节及部分卡片文案保留原型简化。</p><p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame" target="_blank" rel="noreferrer">帧时间 · MDN ↗</a><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/backdrop-filter" target="_blank" rel="noreferrer">背景滤镜 · MDN ↗</a><a href="https://github.com/motiondivision/motion/blob/main/packages/motion-dom/src/animation/generators/spring.ts" target="_blank" rel="noreferrer">弹簧方程 · Motion ↗</a></p></div>
+    </section>
+    <footer><span>CAPTURED 2026.09.27 <b>·</b> BUILT FOR EXPLORATION</span><span>原片留存，细节可追溯。</span></footer>
+  </main>
+  <script type="module" src="app.js"></script>
+</body></html>

@@ -1,0 +1,9 @@
+node_modules/
+_site/
+originals/
+dist/
+.venv/
+__pycache__/
+.DS_Store
+analysis/**/failure.*
+*.log

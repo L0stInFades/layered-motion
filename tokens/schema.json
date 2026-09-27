@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://l0stinfades.github.io/layered-motion/tokens/schema.json",
+  "title": "Layered Motion reference preset",
+  "type": "object",
+  "required": ["version", "status", "units", "reference", "behavior", "assistant", "control", "backdrop"],
+  "properties": {
+    "version": {"const": "0.1.0"},
+    "status": {"const": "reference-preset"},
+    "units": {"type": "object", "required": ["time", "position", "scale", "mass"], "properties": {"time": {"const": "seconds"}, "position": {"const": "reference-pixels"}, "scale": {"const": "ratio"}, "mass": {"const": 1}}},
+    "reference": {"type": "object", "required": ["width", "height", "recording", "sourceManifest"], "properties": {"width": {"type": "number", "exclusiveMinimum": 0}, "height": {"type": "number", "exclusiveMinimum": 0}}},
+    "behavior": {"type": "object", "required": ["retarget", "staleDelay", "reducedMotion"], "properties": {"retarget": {"const": "preserve-position-and-velocity"}, "staleDelay": {"const": "cancel"}, "reducedMotion": {"const": "snap-and-clear-delays"}}},
+    "assistant": {
+      "type": "object", "required": ["closedX", "exitX", "openX", "layers"],
+      "properties": {
+        "closedX": {"type": "number"}, "exitX": {"type": "number"}, "openX": {"const": 0},
+        "layers": {"type": "array", "minItems": 5, "maxItems": 5, "items": {"type": "object", "required": ["name", "landmark", "enter", "exit"], "properties": {"name": {"enum": ["search", "parcel", "shortcuts", "photos", "apps"]}, "landmark": {"type": "string"}, "enter": {"$ref": "#/$defs/spring"}, "exit": {"$ref": "#/$defs/spring"}}}}
+      }
+    },
+    "control": {"type": "object", "required": ["entryFits", "exitObservation"]},
+    "backdrop": {"type": "object", "required": ["controlScale", "assistantScale", "provenance"]}
+  },
+  "$defs": {"spring": {"type": "object", "additionalProperties": false, "required": ["stiffness", "damping", "delay"], "properties": {"stiffness": {"type": "number", "exclusiveMinimum": 0}, "damping": {"type": "number", "exclusiveMinimum": 0}, "delay": {"type": "number", "minimum": 0}}}}
+}
