@@ -34,10 +34,19 @@ python scripts/track_inner_motion.py
 python scripts/track_control_features.py
 python scripts/fit_foreground_motion.py
 node scripts/export-tokens.mjs
-npm test
 ```
 
 基础测量分辨率为 591 × 418，前景轨迹报告换算到 1182 × 836；原尺寸证据为 2364 × 1672。按实际 PTS 解码，未预先转换为固定帧率。JPEG、字体渲染和优化器版本可能产生微小差异；轨迹置信度与残差比二进制相同更适合评价重新拟合。
+
+`npm test` 的哈希检查默认验证发布时的证据快照。重新生成证据后，先比较 CSV、置信度、拟合残差与图像；确认变化可解释，再显式更新派生证据清单并测试：
+
+```sh
+git diff -- analysis web/foreground-data.js tokens/
+node scripts/inventory-evidence.mjs
+npm test
+```
+
+不要用更新清单代替核验来源。原片哈希不随测量脚本的输出变化，始终用 `archive.py verify` 检查。
 
 `inner_motion_study.py` 默认复用已有原尺寸导出，避免重复解码；如果要验证解码本身，应在副本中移走 `analysis/inner-motion/native-*.jpg` 后重跑。它根据原始帧号选帧，不根据视频播放器截图时刻选帧。
 

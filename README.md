@@ -51,6 +51,8 @@ Linux CI 首次安装浏览器时使用 `npx playwright install --with-deps chro
 
 代码与文档采用 [MIT](LICENSE)。原片及其中的界面素材另见 [媒体说明](MEDIA_NOTICE.md)。这是独立的动效研究与参考实现。
 
+参与改进见 [贡献与版本规则](docs/contributing.md)。
+
 ## English
 
 Layered Motion is an evidence-led motion design specification for floating panels and an assistant page. It documents semantic grouping, layered arrival, independent geometry, entry/exit asymmetry and interruptible motion. The repository includes an interactive DOM reconstruction, measured landmarks, 147 consecutive source frames, analysis scripts and an archived recording release.
